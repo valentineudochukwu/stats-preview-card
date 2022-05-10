@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(233, 47%, 7%) ;
+    min-height: 100vh;
+    width: 100vw;
+    color: hsl(0, 0%, 100%);
+    margin: 20px;
+}
+.hero-container{
+    display: flex;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 15px;
+}
+.hero-text h1{
+    margin: 30px;
+}
+.hero-text p{
+    font-size: 15px;
+    margin: 30px;
+    color:  hsla(0, 0%, 100%, 0.75);
+}
+span{
+    color:  hsl(277, 64%, 61%);
+}
+.image-container{
+    background: url(assets/image-header-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.overlay{
+    background-color: hsla(277, 64%, 61%, 0.445);
+    height: 100%;
+    width: 300px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+.list-text {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px; 
+}
+.text b{
+    text-transform: uppercase;
+    font-size: 10px;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+
+
+
+@media screen and (max-width: 700px){
+.hero-container{
+    text-align: center;
+    display: flex;
+    max-width: 300px;
+    flex-direction: column-reverse;
+}
+.hero-text{
+    font-size: 15px;
+    padding: 23px;
+}
+.hero-text p{
+    margin: 14px;
+}
+.hero-text h1 {
+    margin: 20px;
+    font-size: 25px;
+}
+.list-text{
+    display: inline-block;
+    margin: 10px;
+}
+.text{
+    margin: 20px;
+}
+
+.image-container{
+    background: url(assets/image-header-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: unset;
+    border-top-left-radius: 15px;
+    width: 300px;
+
+}
+.overlay{
+    border-top-left-radius: 15px;
+
+}
+
+
+
+
+
+}
+
+
